@@ -10,27 +10,10 @@ import checksEmail from "./utils/sum/checksEmail";
 import checksPassword from './utils/sum/checksPassword'
 
 
-
 $('.hero').append('<div>')
  $("div").append(" <label for='name'>Name</label ><input id='name' class='form__name'type='text' name='name' placeholder='your name'><label for='email'>e-mail</label><input class='form__email' type='text' name='email' placeholder='your email: abc@gmail.com'><label for='password'>password</label><input class='form__password' type='password' name='password' placeholder='pasword'> <button class='waves-effect waves-light btn-large' id='signInButton' > Sign in </button> ");
 
-// newDivElement.className = "form";
-// newDivElement.innerHTML = " <label for='name'>Name</label ><input id='name' class='form__name'type='text' name='name' placeholder='your name'><label for='email'>e-mail</label><input class='form__email' type='text' name='email' placeholder='your email: abc@gmail.com'><label for='password'>password</label><input class='form__password' type='password' name='password' placeholder='pasword'> <button class='waves-effect waves-light btn-large' id='signInButton' > Sign in </button> ";
-// $(".hero").appendTo(newDivElement);
-
-
-
-
-// function checksPassword(password:(string | number | string[])){
-//      if (password.toString().length+1 > 8 ){
-//         var number = /([0-9])/; 
-//     var specialCharacter = /([!, @, #, $, %, ^, &, *])/;
-        
-//        return   number.test(password.toString()) && specialCharacter.test(password.toString())
-//     } else {
-//         return false
-//     }
-// }
+ // labāk likt formu submit nekā button. 
 
 $("#signInButton").on("click", function onClick () {
     let errorMessage = ""; 
@@ -60,9 +43,6 @@ if ($("#name").val() == ""){
         $("#name").val("") ;
         $(".form__email").val("") ;
         $(".form__password").val("") ;
-        // setTimeout(onClick() {
-        //     window.location.reload();
-        // }, 5000);
     }
 });
 
