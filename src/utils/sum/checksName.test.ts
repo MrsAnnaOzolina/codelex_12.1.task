@@ -1,0 +1,10 @@
+import checksName from "./checksName";
+
+describe ('checksName', () =>{
+    it ('Added name should cotnain atleast 2 character with letter only, but not more then 50 character', ()=>{
+        const result = checksName("Anna")
+       expect(result).toEqual(true);
+    })
+
+} )
+
