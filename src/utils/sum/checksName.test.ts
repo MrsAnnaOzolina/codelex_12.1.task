@@ -5,6 +5,10 @@ describe ('checksName', () =>{
         const result = checksName("Anna")
        expect(result).toEqual(true);
     })
+    it ('return false because name is not added', ()=>{
+        const result = checksName(" ")
+       expect(result).toBeFalsy();
+    })
 
 } )
 
